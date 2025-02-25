@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display_num" id="display">0</div>
+        <div class="buttons">
+            <button class="button top" onclick="clearCalculator()">C</button>
+            <button class="button top" onclick="toggleSign()">±</button>
+            <button class="button top" id="backspace">←</button>
+            <button class="button operation">÷</button>
+
+            <button class="button number" onclick="handleNumberClick('7')">7</button>
+            <button class="button number" onclick="handleNumberClick('8')">8</button>
+            <button class="button number" onclick="handleNumberClick('9')">9</button>
+            <button class="button operation">x</button>
+
+            <button class="button number" onclick="handleNumberClick('4')">4</button>
+            <button class="button number" onclick="handleNumberClick('5')">5</button>
+            <button class="button number" onclick="handleNumberClick('6')">6</button>
+            <button class="button operation">-</button>
+
+            <button class="button number" onclick="handleNumberClick('1')">1</button>
+            <button class="button number" onclick="handleNumberClick('2')">2</button>
+            <button class="button number" onclick="handleNumberClick('3')">3</button>
+            <button class="button operation">+</button>
+
+            <button class="button zero" onclick="handleNumberClick('0')">0</button>
+            <button class="button number" onclick="handleNumberClick('.')">.</button>
+            <button class="button operation" onclick="handleEqualsClick()">=</button>
+        </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>
